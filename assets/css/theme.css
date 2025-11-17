@@ -1,0 +1,147 @@
+/* ---------- Base Styles ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ---------- Dark Mode ---------- */
+body.dark {
+  background: #1b1b1b;
+  color: #ddd;
+}
+
+/* ---------- Header & Navigation ---------- */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #1d1f2a;
+  color: white;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+  background: #2f3140;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #c7d8ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#themeToggle {
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 5px 12px;
+  background: #44485c;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .container {
+  background: #2a2a2a;
+}
+
+.pub {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+/* ---------- Profile Image ---------- */
+img.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  object-fit: cover;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3 {
+  color: #000000;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #1e66d0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* ---------- Lists ---------- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Sections ---------- */
+.home, .cv-section, .pub-section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Optional: Code or emphasis styles */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+.contact-links svg {
+  overflow: visible;
+}
