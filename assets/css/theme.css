@@ -66,11 +66,13 @@ body.dark .container {
 }
 
 .pub {
-      margin-bottom: 20px;
-      padding: 15px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
     }
 
 /* ---------- Profile Image ---------- */
@@ -124,7 +126,7 @@ a:hover {
 }
 
 /* ---------- Sections ---------- */
-.home, .cv-section, .pub-section {
+.home, .cv-section, .pub-section .contact-links {
   max-width: 900px;
   margin: 30px auto;
   padding: 20px;
@@ -138,10 +140,7 @@ a:hover {
 em {
   font-style: italic;
 }
-strong {
-  font-weight: bold;
-}
 
-.contact-links svg {
+ svg {
   overflow: visible;
 }
