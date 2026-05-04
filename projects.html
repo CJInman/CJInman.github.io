@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Christopher Inman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0f1117;
+      --surface:   #1c1f2b;
+      --text:      #e2e4ec;
+      --text-mid:  #9da3b4;
+      --text-faint:#5a6178;
+      --accent:    #6a9fd8;
+      --accent-hi: #88b8f0;
+      --rule:      #252836;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* NAV (unchanged for consistency) */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 60px; padding: 0 2.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(19,22,31,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .nav-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.active { color: var(--accent-hi); }
+
+    /* LAYOUT */
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 120px 2rem 100px;
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .page-title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    /* PROJECT LIST */
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .project {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .project-title:hover {
+      color: var(--accent-hi);
+    }
+
+    .project-year {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-faint);
+      letter-spacing: 0.05em;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      margin-bottom: 0.8rem;
+    }
+
+    /* TAGS (reuse CV style) */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .tags span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      color: var(--text-mid);
+      border: 1px solid var(--rule);
+      background: var(--surface);
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+    }
+
+    .project-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      color: var(--accent-hi);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.67rem;
+      color: var(--text-faint);
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Christopher Inman</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact_links.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+
+  <header class="page-header">
+    <h1 class="page-title">Projects</h1>
+  </header>
+
+  <div class="project-list">
+
+    <div class="project">
+      <div class="project-header">
+        <a class="project-title" href="https://github.com/CJInman/Covid19" target="_blank">
+          Covid-19 Analysis
+        </a>
+        <span class="project-year">2026</span>
+      </div>
+
+      <p class="project-desc">
+        Statistical analysis of Covid-19 spread patterns, exploring temporal trends and regional variation using data-driven methods.
+      </p>
+
+      <div class="tags">
+        <span>Python</span>
+        <span>pandas</span>
+        <span>Matplotlib</span>
+        <span>SQL</span>
+        <span>Power BI</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/CJInman/Covid19" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="footer-note">Christopher Inman · Astrophysics Researcher</span>
+    <span class="footer-note">Updated 2026</span>
+  </footer>
+
+</main>
+
+</body>
+</html>
