@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV — Christopher Inman</title>
+  <title>CV | Christopher Inman</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
@@ -70,6 +70,24 @@
     .page-title {
       font-size: 2rem; font-weight: 600;
       color: var(--text); letter-spacing: -0.02em;
+    }
+
+    .cv-download {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--rule);
+      padding: 0.55rem 0.85rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    .cv-download:hover {
+      color: var(--accent-hi);
+      border-color: var(--accent);
     }
 
     /* ── SECTIONS ── */
@@ -222,6 +240,7 @@
 
   <header class="page-header">
     <h1 class="page-title">Curriculum Vitae</h1>
+    <a href="Christopher_Inman_CV.pdf" class="cv-download" target="_blank" download>Download PDF</a>
   </header>
 
   <!-- EDUCATION -->
@@ -342,7 +361,7 @@
   </section>
 
   <footer>
-    <span class="footer-note">Christopher Inman &nbsp;·&nbsp; Astrophysics Researcher</span>
+    <span class="footer-note">Christopher Inman | Astrophysics Researcher</span>
     <span class="footer-note">Updated 2026</span>
   </footer>
 
